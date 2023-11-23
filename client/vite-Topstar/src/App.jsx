@@ -6,7 +6,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import Home from "./pages/Home";
+import Home from "./components/Home/Home.jsx";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import SignIn from "./pages/SignIn";
