@@ -1,41 +1,35 @@
-// src/App.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-
-function App() {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/designs">Designs</Link>
-          </li>
-          <li>
-            <Link to="/signin">Sign In</Link>
-          </li>
-          <li>
-            <Link to="/cart">Cart</Link>
-          </li>
-        </ul>
-      </nav>
  
-      <div>
-        <h1>Welcome to our Home Designs</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptas, quos, quibusdam, voluptate corrupti quae doloribus
-          voluptatum, quia doloremque quod autem! Quisquam, voluptatum
-          voluptates. Voluptate, quibusdam. Quas, voluptatum. Quisquam
-          voluptas, quos, quibusdam, voluptate corrupti quae doloribus
-          voluptatum, quia doloremque quod autem! Quisquam, voluptatum
-          voluptates. Voluptate, quibusdam. Quas, voluptatum.
-        </p>
-      </div>
-    </div>
-  );
+
+
+ 
+
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from "./components/Navbar";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
+import Cart from "./pages/Cart";
+import SignIn from "./pages/SignIn";
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <NavBar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/products" component={Products} />
+            <Route path="/cart" component={Cart} />
+            <Route path="/signin" component={SignIn} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
+
+
+ 
