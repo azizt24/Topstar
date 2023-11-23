@@ -6,10 +6,11 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
-import Home from "./components/Home/Home.jsx";
-import Products from "./pages/Products";
-import Cart from "./pages/Cart";
-import SignIn from "./pages/SignIn";
+ 
+import Products from "./pages/products/Products";
+import Cart from "./pages/Cart/Cart";
+import SignIn from "./pages/SignIn/SignIn";
+import Home from './pages/Home/Home';
 
 class App extends Component {
   render() {
