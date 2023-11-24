@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -7,8 +7,99 @@ body {
   align-items: center;
   justify-content: center;  
   height: 100vh;
-  background: linear-gradient(45deg, #ea4f4c 0%, #6d0019 100%);
+ 
+} */
+
+ 
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.hero {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/349/630/398/5bd383531878d-wallpaper-preview.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display:  flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 500px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.about-us {
+  background-color: #f8f8f8;  
+  padding: 2rem 0;
+  text-align: center;
+  color: #333;
+}
+
+
+.contact {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+}
+
+.contact .cta-button {
+  background-color: #fff;
+  color: #333;
+}
+footer {
+ 
+  color: #333;
+  text-align: center;
+  padding: 0rem  0;
 }
 
  
- 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}

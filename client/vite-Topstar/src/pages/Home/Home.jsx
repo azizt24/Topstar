@@ -1,11 +1,34 @@
- 
 import React from 'react';
-import "./Home.css";
+import './Home.css';
+
 function Home() {
   return (
     <div>
-      <h1>Welcome to our Home Page</h1>
-       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis iusto earum iste ab perferendis facilis recusandae ullam! Atque adipisci saepe, suscipit maxime iure sint eum nesciunt magnam delectus dolorum. Quis corporis officia dolorem expedita est necessitatibus iure quam illo. Sequi animi eveniet necessitatibus officia maiores, deleniti error voluptatem officiis iure sapiente possimus minus soluta esse quod aspernatur in sunt porro, perferendis debitis blanditiis quibusdam molestiae ut nemo. Aut distinctio obcaecati repellat sit id blanditiis. Modi autem fugiat et. Quae velit esse exercitationem tempora odit impedit aspernatur magnam nobis distinctio neque expedita, ex iure ipsum nulla unde architecto quo porro dolor?</p>
+    
+      <header className="hero">
+        <div className="hero-content">
+          <h1>Welcome to Topstar Perfumes</h1>
+          <p>Discover the essence of luxury with our exquisite collection of perfumes.</p>
+         
+        </div>
+      </header>
+
+    
+        <h2>About Us</h2>
+        <p>We at Topstar Perfumes are dedicated to providing you with the finest fragrances that captivate your senses. Our collection is crafted with precision and passion to ensure an unforgettable experience.</p>
+   
+
+      
+      <section className="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to our customer support team.</p>
+        <a href="#" className="cta-button">Contact Us</a>
+      </section>
+
+     
+      <footer>
+        <p>&copy; 2023 Topstar Perfumes. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
