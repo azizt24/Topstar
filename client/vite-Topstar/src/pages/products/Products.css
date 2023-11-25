@@ -1,0 +1,52 @@
+ 
+
+.perfume-container {
+  text-align: center;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+}
+
+.product-item {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 90%;
+  height: 150px;  
+  object-fit: cover; 
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-item h3 {
+  margin-top: 10px;
+}
+
+.product-item p {
+  margin-top: 10px;
+}
+
+.product-item button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-item button:hover {
+  background-color: #45a049;
+}

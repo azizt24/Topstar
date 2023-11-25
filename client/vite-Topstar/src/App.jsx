@@ -1,36 +1,35 @@
- 
-
-
- 
-
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
- 
 import Products from "./pages/products/Products";
-import Cart from "./pages/Cart/Cart";
 import SignIn from "./pages/SignIn/SignIn";
 import Home from './pages/Home/Home';
+import Cart from './pages/Cart/Cart';
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <NavBar />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/products" component={Products} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/signin" component={SignIn} />
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
+function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
+  return (
+    <Router>
+      <div>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/products">
+            <Products addToCart={addToCart} />
+          </Route>
+          <Route path="/cart">
+            <Cart cart={cart} />
+          </Route>
+          <Route path="/signin" component={SignIn} />
+        </Switch>
+      </div>
+    </Router>
+  );
 }
 
 export default App;
-
-
- 
