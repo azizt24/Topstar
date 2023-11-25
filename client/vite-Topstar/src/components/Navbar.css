@@ -1,20 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;  
-  height: 50vh;
   background: linear-gradient(45deg, #ea4f4c 0%, #6d0019 100%);
 }
 
 .navigationWrapper {
-  position: fixed;  
-  top: 0; 
-  left: 50%;  
-  transform: translateX(-50%);  
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,51 +17,47 @@ body {
   overflow: hidden;
   width: 100%;
   z-index: 1000;
-  
-    }
+}
 
-    .logo {
-      padding-left: 4px;
-      color: #ea4f4c;
-    }
-  
+.navigationWrapper ul {
+  margin-right: 2rem;
+}
 
-  .navigation {
-    display: flex;
-    list-style-type: none;
+.logo {
+  padding-left: 4px;
+  color: #ea4f4c;
+}
 
-     
-    .parent {
-      padding: 0 10px;
-      cursor: pointer;
+.navigation {
+  display: flex;
+  .parent {
+    padding: 0 10px;
+    cursor: pointer;
 
-      .link {
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
-        color: white;
+    .link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      transition: all 1.7s ease-in-out;
+      color: white;
 
-        &:hover {
-          color: #ea4f4c;
-        }
-
+      &:hover {
+        color: #ea4f4c;
       }
     }
-    .nav-link {
-      display: inline-block;
-      margin: 0 10px; /* Adjust the spacing between letters */
-      text-decoration: none;
-      color: white;
-      font-size: 18px; /* Adjust the font size as needed */
-      letter-spacing: 2px; /* Adjust the letter spacing */
-    }
-    .nav-link:hover {
-      color: #ea4f4c; /* Change the color on hover if needed */
-    }
   }
- 
+  .nav-link {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the spacing between letters */
+    text-decoration: none;
+    color: white;
+    font-size: 13px; /* Adjust the font size as needed */
+    letter-spacing: 2px; /* Adjust the letter spacing */
+  }
+  .nav-link:hover {
+    color: #ea4f4c; /* Change the color on hover if needed */
+  }
+}
 
 .active.parent {
   transform: translate(-40px, -25px);
@@ -86,8 +73,6 @@ body {
       opacity: 0 !important;
     }
   }
-
-  
 }
 
 .active#clients {
@@ -96,15 +81,7 @@ body {
   }
 }
 
- 
-
 .invisible {
   opacity: 0 !important;
   transform: translate(50px, 0);
 }
-
-
-    
-     
-  
-

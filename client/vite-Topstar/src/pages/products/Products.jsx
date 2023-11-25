@@ -7,7 +7,6 @@ const PerfumeList = () => {
     fetch("http://localhost:3000/products")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.data);
         setProducts(data.data);
       })
       .then((data) => setProducts(data.data))
