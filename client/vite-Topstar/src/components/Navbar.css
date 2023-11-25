@@ -59,27 +59,30 @@ body {
   }
 }
 
-.active.parent {
-  transform: translate(-40px, -25px);
-  .link {
-    font-size: 12px;
-
-    .fa-minus {
-      opacity: 1 !important;
-      font-size: 8px;
+      &:hover {
+        color: #ea4f4c;
+      }
     }
+  }
 
-    .fa-plus {
-      opacity: 0 !important;
-    }
+  .nav-link {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
   }
 }
 
-.active#clients {
-  .subnavigation {
-    transform: translate(-150px, 17px);
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .navigationWrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-}
 
 .invisible {
   opacity: 0 !important;
