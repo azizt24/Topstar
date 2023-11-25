@@ -24,7 +24,7 @@ body {
   color: white;
   text-transform: uppercase;
   overflow: hidden;
-  width: 1800px;
+  width: 100%;
   z-index: 1000;
   
     }
@@ -102,3 +102,9 @@ body {
   opacity: 0 !important;
   transform: translate(50px, 0);
 }
+
+
+    
+     
+  
+
