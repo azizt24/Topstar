@@ -9,7 +9,8 @@ const PerfumeList = () => {
   useEffect(() => {
  
     fetch('http://localhost:3000/products')
-      .then(response => response.json() ).then(data => console.log(data))
+      .then(response => response.json() ).then(data =>)
+    
       .then(data => setProducts(data.data))
       .catch(error => console.error('Error fetching products:', error));
   }, []);
