@@ -30,6 +30,7 @@ body {
 
 .navigation {
   display: flex;
+
   .parent {
     padding: 0 10px;
     cursor: pointer;
@@ -46,36 +47,21 @@ body {
       }
     }
   }
-  .nav-link {
-    display: inline-block;
-    margin: 0 10px; /* Adjust the spacing between letters */
-    text-decoration: none;
-    color: white;
-    font-size: 13px; /* Adjust the font size as needed */
-    letter-spacing: 2px; /* Adjust the letter spacing */
-  }
-  .nav-link:hover {
-    color: #ea4f4c; /* Change the color on hover if needed */
-  }
-}
-
-      &:hover {
-        color: #ea4f4c;
-      }
-    }
-  }
 
   .nav-link {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 13px;
     letter-spacing: 2px;
+
+    &:hover {
+      color: #ea4f4c;
+    }
   }
 }
 
-/* Responsive Styles */
 @media only screen and (max-width: 768px) {
   .navigationWrapper {
     flex-direction: column;
@@ -84,7 +70,8 @@ body {
     text-align: center;
   }
 
-.invisible {
-  opacity: 0 !important;
-  transform: translate(50px, 0);
+  .invisible {
+    opacity: 0 !important;
+    transform: translate(50px, 0);
+  }
 }
